@@ -10,10 +10,10 @@ Repo with all the related scripts/jsons to test TokBox data on a vacuum
 2) Run ruby ./get_params.rb to get the start_time, end_time and Token required for posting the TokBox API, keep in mind that the token has a lifetime of tree mintues.
 # Getting sessionIds
 1) If you don't have the Postman app installed, you can find it here: https://www.postman.com/.
-2) In Postman: 
-  i) Set the POST url as  https://insights.opentok.com/graphql
-  ii) In the Headers section, set Content-Type as application/json, and paste the generated token in the X-OPENTOK-AUTH field.
-  iii) In the body section, paste the content of the get_sessions.json file with PROJECT_KEY replaced for the project key as an integer, START_TIME and END_TIME with the ones generated with the script.
+2) In Postman:
+i) Set the POST url as  https://insights.opentok.com/graphql
+ii) In the Headers section, set Content-Type as application/json, and paste the generated token in the X-OPENTOK-AUTH field.
+iii) In the body section, paste the content of the get_sessions.json file with PROJECT_KEY replaced for the project key as an integer, START_TIME and END_TIME with the ones generated with the script.
 NOTE: For the way the TokBox API works, it will only return the first 1000 sessionIds for the specified period, so if you want to get more you will need to keep posting specifing a endCursor on the sessionSummaries field (after the first:100) with endCursor of the last respond each time until the hasNextPage field of the respons is false.
 # Getting sessions details
 In Postman: 
