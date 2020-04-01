@@ -1,6 +1,6 @@
 # TokBox-Testing
 Repo with all the related scripts/jsons to test TokBox sessions data pulled via the API on a vacuum.
-The official TokBox API documentation can be found at: https://tokbox.com/developer/guides/insights/
+The official TokBox API documentation can be found at https://tokbox.com/developer/guides/insights/
 # Environment Setup
 
  - Run `gem install bundler` and `bundle install`. This will install the required libraries to run the `get_params.rb` script
