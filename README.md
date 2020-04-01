@@ -13,7 +13,7 @@ The official TokBox API documentation can be found at: https://tokbox.com/develo
 2) In Postman:
  - Set the POST url as  https://insights.opentok.com/graphql
  - In the Headers section, set Content-Type as application/json, and paste the generated token in the X-OPENTOK-AUTH field.
- - In the body section, paste the content of the get_sessions.json file with `PROJECT_KEY` replaced for the project key as an integer, `START_TIME` and `END_TIME` with the ones generated with the script.
+ - In the Body section, paste the content of the get_sessions.json file with `PROJECT_KEY` replaced for the project key as an integer, `START_TIME` and `END_TIME` with the ones generated with the script.
 NOTE: For the way the TokBox API works it will only return the first 1000 sessionIds for the specified period, so if you want to get more you will need to keep posting specifying a `endCursor` on the `sessionSummaries` field (after the first:1000) with `endCursor` of the last respond each time until the `hasNextPage` field of the response is `false`.
 # Getting sessions details
 In Postman: 
