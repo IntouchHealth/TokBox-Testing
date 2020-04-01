@@ -1,7 +1,10 @@
 query {
   project(projectId: PROJECT_KEY) {
     sessionData{
-      sessions(sessionIds: ["1_MX40NjA4ODkyMn5-MTU4NDM2NzEzMzkwOH4vWThFYk1PSHZub01YK1hVNDFpR3hwMDJ-fg"]){
+      sessions(sessionIds: [
+        "session_id_1",
+        "session_id_2"
+      ]) {
         resources{
           sessionId
           meetings(first:10){
