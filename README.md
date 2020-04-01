@@ -1,3 +1,4 @@
+
 # TokBox-Testing
 Repo with all the related scripts/jsons to test TokBox sessions data pulled via the API on a vacuum.
 The official TokBox API documentation can be found at https://tokbox.com/developer/guides/insights/
