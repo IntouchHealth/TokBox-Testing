@@ -21,4 +21,3 @@ In Postman:
 2) In the Headers section, set `Content-Type` as `application/json` and paste the generated token in the `X-OPENTOK-AUTH` field. 
 3) In the Body section, paste the content of the `get_sessions_details.json` file with `PROJECT_KEY` replaced for the project key as an integer and in the sessionIds section paste the sessionIds you want to get the details from.
 NOTE: For the way the TokBox API works, it will only return the details for the first 50 sessionIds specified, so don't do more than 50 at a time.
-
