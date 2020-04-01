@@ -2,7 +2,7 @@
 # TokBox-Testing
 Repo with all the related scripts/jsons to test TokBox sessions data pulled via the API on a vacuum.
 The official TokBox API documentation can be found at https://tokbox.com/developer/guides/insights/
-# Environment Setup
+# Environment setup
 
  - Run `gem install bundler` and `bundle install`. This will install the required libraries to run the `get_params.rb` script
  - In the `get_params.rb` file, replace `PROJECT_KEY` on line 18 for the `Username` as string and `PROJECT_SECRET` on line 24 for the `Password`, these credentials can be found in the Data Team LastPass vault under the name of `Tokbox Insights API Creds - Consumer Production Project.`
