@@ -1,0 +1,17 @@
+query {
+  project(projectId: PROJECT_KEY) {
+    sessionData{
+      sessionSummaries(start: "START_TIME", end: "END_TIME", first:1000){
+        resources {
+          sessionId
+        }
+        pageInfo {
+            hasNextPage
+            endCursor
+        }
+        totalCount
+      }
+    }
+  }
+}
+

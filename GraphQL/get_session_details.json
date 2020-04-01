@@ -1,0 +1,72 @@
+query {
+  project(projectId: PROJECT_KEY) {
+    sessionData{
+      sessions(sessionIds: ["1_MX40NjA4ODkyMn5-MTU4NDM2NzEzMzkwOH4vWThFYk1PSHZub01YK1hVNDFpR3hwMDJ-fg"]){
+        resources{
+          sessionId
+          meetings(first:10){
+            resources {
+              meetingId
+              createdAt
+              destroyedAt
+              publishers(first:100) {
+                resources {
+                  connectionId
+                  createdAt
+                  destroyedAt
+                  stream {
+                    streamId
+                    videoType
+                    hasVideoTrack
+                    hasAudioTrack
+                  }
+                  streamStatsCollection(first:100){
+                    resources {
+                      createdAt,
+                      audioCodec,
+                      audioLatencyMs,
+                      audioBitrateKbps,
+                      audioPacketLoss,
+                      videoCodec,
+                      videoLatencyMs,
+                      videoBitrateKbps,
+                      videoPacketLoss,
+                      videoResolution
+                    }
+                  }
+                }
+              }
+              subscribers(first:100) {
+                resources {
+                  connectionId
+                  createdAt
+                  destroyedAt
+                  stream {
+                    streamId
+                    videoType
+                    hasVideoTrack
+                    hasAudioTrack
+                  }
+                  streamStatsCollection(first:100){
+                    resources {
+                      createdAt,
+                      audioCodec,
+                      audioLatencyMs,
+                      audioBitrateKbps,
+                      audioPacketLoss,
+                      videoCodec,
+                      videoLatencyMs,
+                      videoBitrateKbps,
+                      videoPacketLoss,
+                      videoResolution
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
